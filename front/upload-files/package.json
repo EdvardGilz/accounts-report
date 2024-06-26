@@ -1,0 +1,55 @@
+{
+  "name": "upload-files",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.101",
+    "@types/react": "^18.2.38",
+    "@types/react-dom": "^18.2.17",
+    "@uppy/aws-s3": "^3.6.2",
+    "@uppy/compressor": "^1.1.4",
+    "@uppy/core": "^3.13.0",
+    "@uppy/dashboard": "^3.9.0",
+    "@uppy/drag-drop": "^3.1.0",
+    "@uppy/file-input": "^3.1.2",
+    "@uppy/locales": "^3.5.4",
+    "@uppy/progress-bar": "^3.1.1",
+    "@uppy/react": "^3.4.0",
+    "build-url-ts": "^6.1.7",
+    "react": "^18.3.1",
+    "react-data-table-component": "^7.6.2",
+    "react-dom": "^18.3.1",
+    "react-scripts": "5.0.1",
+    "styled-components": "^6.1.11",
+    "typescript": "^4.9.5",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

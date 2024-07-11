@@ -45,6 +45,12 @@ cd upload-files
 npm install
 ```
 
+- Change `REACT_APP_API_ENDPOINT` variable with your API Gateway endpoint in `.env` file
+
+> [!IMPORTANT]
+> The configured API is down. If you want to set up your own API, follow the steps in the back section.
+> [API Gateway Definition](/back/README.md#api-gateway-definition)
+
 - Launch app
 
 ```bash

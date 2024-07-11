@@ -14,11 +14,13 @@ The project contains three APIs:
 
 1. [Technologic Stack](#technologic-stack)
 2. [API Endpoints](#api-endpoints)
-3. [Instalation And Run In Local](#instalation-and-run-in-local)
-4. [Testing](#testing)
-5. [Deploy To Lambda](#deploy-to-lambda)
-6. [Author](#author)
-7. [License](#license)
+3. [API Gateway Definition](#api-gateway-definition)
+4. [DynamoDB Definition](#dynamodb-definition)
+5. [Instalation And Run In Local](#instalation-and-run-in-local)
+6. [Testing](#testing)
+7. [Deploy To Lambda](#deploy-to-lambda)
+8. [Author](#author)
+9. [License](#license)
 
 ## Technologic Stack
 
@@ -35,6 +37,10 @@ A list of technologies used within the project:
 
 The URL for the APIs is `https://373at1pkac.execute-api.us-east-1.amazonaws.com/dev`
 
+> [!IMPORTANT]
+> This API is down. If you want to set up your own API, follow the steps in the next section.
+> [API Gateway Definition](#api-gateway-definition)
+
 | HTTP Verbs | Endpoints                                   | Action                             |
 | ---------- | ------------------------------------------- | ---------------------------------- |
 | GET        | /accounts                                   | To fetch all records from DynamoDB |
@@ -43,6 +49,17 @@ The URL for the APIs is `https://373at1pkac.execute-api.us-east-1.amazonaws.com/
 | POST       | /files/s3/multipart/{uploadId}/complete     | Required by Uppy                   |
 | GET        | /files/s3/params                            | Required by Uppy                   |
 | POST       | /reports                                    | To send summary email              |
+
+## API Gateway Definition
+
+You can find the OpenAPI definition JSON to import to your API Gateway in this repo, in the `assets` folder.
+
+- Change `<region>` and `<account_id>` in the file with your region and your account id.
+
+## DynamoDB Definition
+
+- Partition key: `account_id (N)`
+- Sort key: `id (N)`
 
 ## Instalation And Run In Local
 

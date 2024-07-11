@@ -6,6 +6,10 @@ Challenge that sends a report of the summary of an account, fed by a CSV.
 
 - You can send the email with the summary of transactions by making a `POST` request to the following API `https://373at1pkac.execute-api.us-east-1.amazonaws.com/dev/reports` with a body like the following:
 
+> [!IMPORTANT]
+> This API is down. If you want to set up your own API, follow the steps in the back section.
+> [API Gateway Definition](/back/README.md#api-gateway-definition)
+
 ```bash
 {
     "email": "<your email>",

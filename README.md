@@ -32,11 +32,11 @@ The project consists of two parts:
   - An API to read the file from S3, obtain and validate the data, store new records in DynamoDB, perform calculations, and send the summary by email.
   - An API to retrieve the records from the database.
 
-![upload account files](assets/UploadAccountFile-Stori.png)
+![upload account files](assets/UploadAccountFile.png)
 
-![send account report](assets/SendAccountReport-Stori.png)
+![send account report](assets/SendAccountReport.png)
 
-![get account data](assets/GetAccountData-Stori.png)
+![get account data](assets/GetAccountData.png)
 
 ## Technologic Stack
 
